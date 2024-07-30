@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="icon" type="image/x-icon" href="images/netflix-logo.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-banner">
+        <img src="images/netflix-banner.png" alt="Netflix" width="140px" />
+      </div>
+      <div class="navbar-lists">
+        <ul type="none">
+          <li>Home</li>
+          <li>Movies</li>
+          <li>TV Shows</li>
+          <li>Trendings</li>
+        </ul>
+      </div>
+
+      <div class="searchbar">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="What are you looking for?"
+        />
+      </div>
+    </div>
+    <button onclick="toggleBtn()" id="bar">
+      <i class="fa-solid fa-bars"></i><span>Search by Genre</span>
+    </button>
+    <div id="tags"></div>
+    <div class="movies-list"></div>
+
+    <div id="pages">
+      <span class="previousBtn"><i class="fa-solid fa-angle-left"></i></span>
+      <span class="page">Page 1</span>
+      <span class="nextBtn"><i class="fa-solid fa-angle-right"></i></span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

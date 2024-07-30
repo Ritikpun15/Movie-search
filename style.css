@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #000;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+}
+
+.navbar-banner {
+    padding-top: 5px;
+}
+
+.navbar-lists ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+.searchbar {
+    background-color: white;
+    display: flex;
+    border-radius: 50px;
+}
+
+#search {
+    width: 20vw;
+    padding: 3% 8%;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 17vw;
+    border: 1px solid red;
+    margin: 5vh;
+}
+
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box .overlay {
+    width: 89%;
+    max-height: 100%;
+    min-height: auto;
+    position: absolute;
+    bottom: -100%;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    left: 0;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.box:hover .overlay {
+    bottom: 0%;
+}
+
+.box span {
+    color: orange;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.title h2 {
+    width: 18vw;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 20%);
+    border-radius: 8px;
+}
+.box {
+    padding: 10px;
+    width: 25vw;
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.overlay p {
+    font-size: 0.85rem;
+}
+
+.genreBtn {
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 1.6rem;
+}
+
+#tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    display: none;
+}
+
+.tag {
+    color: white;
+    background-color: #E50914;
+    padding: 0.5% 1.5%;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+#pages {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.previousBtn {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nextBtn {
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.page {
+    font-size: 1.3rem;
+    margin: 0px 10px;
+}
+
+#bar {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    border: 2px solid #E50914;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#bar span {
+    margin-left: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
